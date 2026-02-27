@@ -4,7 +4,7 @@ def create_sources():
     print("Creating Lead Sync Source records...")
     page = frappe.get_doc("Facebook Page", {"page_name": "Ipshopy Seller Hub"})
     forms = frappe.get_all("Facebook Lead Form", filters={"page": page.id})
-    token = "EAAcLPVZCYckUBQil7xr6ZAIekyHGZAfk1iuls8b1cFkVkjPwCBmsvq4Tf0wfBT7Typi9ZAJdZAQjgyq36AY4itj97AxqU9B8d5HU4fkZBqe3FWuyisZATIyQU6qhUoaJZBzu4dvcHvfmJwI125QtqpfMuA3AZBJ2YZCfOTIJDn9dLDAyWOITZAfvxXVomowFqImqg9n"
+    token = "Your Fb access token"
 
     for form in forms:
         if not frappe.db.exists("Lead Sync Source", {"facebook_lead_form": form.name}):
