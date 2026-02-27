@@ -1,0 +1,674 @@
+2026-02-20 12:48:00,509 DEBUG cd frappe-bench && uv venv env --seed --python python3
+2026-02-20 12:48:01,877 LOG Getting frappe
+2026-02-20 12:48:01,877 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2026-02-20 12:48:06,578 LOG Installing frappe
+2026-02-20 12:48:06,579 DEBUG cd /home/acash/frappe-bench && uv pip install --quiet --upgrade -e /home/acash/frappe-bench/apps/frappe  --python /home/acash/frappe-bench/env/bin/python
+2026-02-20 12:48:15,144 DEBUG cd /home/acash/frappe-bench/apps/frappe && yarn install --check-files
+2026-02-20 12:48:16,410 ERROR There was a problem while creating frappe-bench
+2026-02-20 12:48:21,045 WARNING /home/acash/.local/bin/bench init frappe-bench --frappe-branch version-15 executed with exit code 1
+2026-02-20 12:54:57,377 INFO /home/acash/.local/bin/bench setup requirements
+2026-02-20 12:54:57,380 DEBUG uv pip install --quiet --upgrade pip --python /home/acash/frappe-bench/env/bin/python
+2026-02-20 12:54:57,656 LOG Installing frappe
+2026-02-20 12:54:57,657 DEBUG cd /home/acash/frappe-bench && uv pip install --quiet --upgrade -e /home/acash/frappe-bench/apps/frappe  --python /home/acash/frappe-bench/env/bin/python
+2026-02-20 12:54:58,770 DEBUG cd /home/acash/frappe-bench/apps/frappe && yarn install --check-files
+2026-02-20 12:55:19,804 INFO /home/acash/.local/bin/bench build
+2026-02-20 12:56:24,631 INFO /home/acash/.local/bin/bench get-app crm https://github.com/shubh1199/ipshopy-crm.git --branch develop
+2026-02-20 12:56:24,636 LOG Getting ipshopy-crm
+2026-02-20 12:56:24,636 DEBUG cd ./apps && git clone https://github.com/shubh1199/ipshopy-crm.git --branch develop --depth 1 --origin upstream
+2026-02-20 12:57:29,377 LOG Installing crm
+2026-02-20 12:57:29,377 DEBUG cd /home/acash/frappe-bench && uv pip install --quiet --upgrade -e /home/acash/frappe-bench/apps/crm  --python /home/acash/frappe-bench/env/bin/python
+2026-02-20 12:57:30,489 DEBUG cd /home/acash/frappe-bench/apps/crm && yarn install --check-files
+2026-02-20 12:58:01,118 DEBUG bench build --app crm
+2026-02-20 12:58:01,385 INFO /home/acash/.local/bin/bench build --app crm
+2026-02-20 12:59:00,580 INFO /home/acash/.local/bin/bench new-site ipshopy.localhost
+2026-02-20 13:01:42,457 INFO /home/acash/.local/bin/bench new-site ipshopy.localhost
+2026-02-20 13:02:30,096 INFO /home/acash/.local/bin/bench build
+2026-02-20 13:03:27,247 INFO /home/acash/.local/bin/bench start
+2026-02-20 13:03:27,641 INFO /home/acash/.local/bin/bench watch
+2026-02-20 13:03:27,648 INFO /home/acash/.local/bin/bench worker
+2026-02-20 13:03:27,649 INFO /home/acash/.local/bin/bench serve --port 8000
+2026-02-20 13:03:27,668 INFO /home/acash/.local/bin/bench schedule
+2026-02-20 13:04:05,109 INFO /home/acash/.local/bin/bench use ipshopy.localhost
+2026-02-20 13:04:11,197 INFO /home/acash/.local/bin/bench restart
+2026-02-20 13:04:16,070 INFO /home/acash/.local/bin/bench build
+2026-02-20 13:05:17,836 INFO /home/acash/.local/bin/bench restart
+2026-02-20 13:07:17,252 INFO /home/acash/.local/bin/bench --site ipshopy.localhost list-apps
+2026-02-20 13:07:31,516 INFO /home/acash/.local/bin/bench --site ipshopy.localhost install-app crm
+2026-02-20 13:07:46,681 INFO /home/acash/.local/bin/bench build
+2026-02-20 13:08:40,753 INFO /home/acash/.local/bin/bench restart
+2026-02-20 13:11:00,721 INFO /home/acash/.local/bin/bench migrate
+2026-02-20 14:54:46,786 INFO /home/acash/.local/bin/bench restart
+2026-02-20 14:55:30,184 INFO /home/acash/.local/bin/bench set-config -g server_script_enabled 1
+2026-02-20 14:55:38,374 INFO /home/acash/.local/bin/bench restart
+2026-02-20 14:55:48,774 INFO /home/acash/.local/bin/bench set-config developer_mode 1
+2026-02-20 14:55:49,050 INFO /home/acash/.local/bin/bench restart
+2026-02-20 15:05:41,264 INFO /home/acash/.local/bin/bench ngrok
+2026-02-20 15:06:45,684 INFO /home/acash/.local/bin/bench ngrok --help
+2026-02-20 15:07:03,696 INFO /home/acash/.local/bin/bench ngrok --use-default-authtoken
+2026-02-20 15:38:00,794 INFO /home/acash/.local/bin/bench use ipshopy.localhost
+2026-02-20 15:44:04,234 INFO /home/acash/.local/bin/bench restart
+2026-02-20 15:45:39,184 INFO /home/acash/.local/bin/bench start
+2026-02-20 15:45:39,724 INFO /home/acash/.local/bin/bench serve --port 8000
+2026-02-20 15:45:39,742 INFO /home/acash/.local/bin/bench schedule
+2026-02-20 15:45:39,743 INFO /home/acash/.local/bin/bench watch
+2026-02-20 15:45:39,766 INFO /home/acash/.local/bin/bench worker
+2026-02-20 15:45:56,520 INFO /home/acash/.local/bin/bench ngrok --use-default-authtoken
+2026-02-20 15:49:26,239 INFO /home/acash/.local/bin/bench new-app ipshopy
+2026-02-20 15:49:26,245 LOG creating new app ipshopy
+2026-02-20 15:50:04,339 LOG Installing ipshopy
+2026-02-20 15:50:04,340 DEBUG cd /home/acash/frappe-bench && uv pip install --quiet --upgrade -e /home/acash/frappe-bench/apps/ipshopy  --python /home/acash/frappe-bench/env/bin/python
+2026-02-20 15:50:04,897 DEBUG bench build --app ipshopy
+2026-02-20 15:50:04,976 INFO /home/acash/.local/bin/bench build --app ipshopy
+2026-02-20 15:50:20,514 INFO /home/acash/.local/bin/bench --site ipshopy.localhost install-app ipshopy
+2026-02-20 15:50:31,409 INFO /home/acash/.local/bin/bench --site ipshopy.localhost install-app department
+2026-02-20 15:52:12,273 INFO /home/acash/.local/bin/bench new-app department
+2026-02-20 15:52:12,277 LOG creating new app department
+2026-02-20 15:52:12,551 WARNING /home/acash/.local/bin/bench new-app department executed with exit code 1
+2026-02-20 15:53:10,082 INFO /home/acash/.local/bin/bench new-app ipshopy
+2026-02-20 15:53:10,085 LOG creating new app ipshopy
+2026-02-20 15:53:10,323 WARNING /home/acash/.local/bin/bench new-app ipshopy executed with exit code 1
+2026-02-20 15:53:24,468 INFO /home/acash/.local/bin/bench --site ipshopy.localhost install-app ipshopy
+2026-02-20 15:56:00,807 INFO /home/acash/.local/bin/bench clear-cache
+2026-02-20 15:56:11,796 INFO /home/acash/.local/bin/bench restart
+2026-02-20 15:56:32,961 INFO /home/acash/.local/bin/bench new-app ipshopy
+2026-02-20 15:56:32,964 LOG creating new app ipshopy
+2026-02-20 15:56:59,335 LOG Installing ipshopy
+2026-02-20 15:56:59,336 DEBUG cd /home/acash/frappe-bench && uv pip install --quiet --upgrade -e /home/acash/frappe-bench/apps/ipshopy  --python /home/acash/frappe-bench/env/bin/python
+2026-02-20 15:56:59,851 DEBUG bench build --app ipshopy
+2026-02-20 15:56:59,939 INFO /home/acash/.local/bin/bench build --app ipshopy
+2026-02-20 15:57:28,761 INFO /home/acash/.local/bin/bench --site ipshopy.localhost install-app ipshopy
+2026-02-20 15:59:20,137 INFO /home/acash/.local/bin/bench restart
+2026-02-20 16:00:16,974 INFO /home/acash/.local/bin/bench build
+2026-02-20 16:01:25,261 INFO /home/acash/.local/bin/bench restart
+2026-02-20 16:03:05,604 INFO /home/acash/.local/bin/bench start
+2026-02-20 16:03:05,827 INFO /home/acash/.local/bin/bench worker
+2026-02-20 16:03:05,832 INFO /home/acash/.local/bin/bench watch
+2026-02-20 16:03:05,835 INFO /home/acash/.local/bin/bench schedule
+2026-02-20 16:03:05,842 INFO /home/acash/.local/bin/bench serve --port 8000
+2026-02-20 16:17:32,489 INFO /home/acash/.local/bin/bench --site ipshopy.localhost list apps
+2026-02-20 16:17:40,423 INFO /home/acash/.local/bin/bench --site ipshopy.localhost list-apps
+2026-02-20 16:23:48,408 INFO /home/acash/.local/bin/bench build
+2026-02-20 16:25:02,290 INFO /home/acash/.local/bin/bench restart
+2026-02-20 16:30:48,781 INFO /home/acash/.local/bin/bench restart
+2026-02-20 16:32:00,617 INFO /home/acash/.local/bin/bench --site ipshopy.localhost reload-doc crm doctype crm_lead
+2026-02-20 16:32:22,647 INFO /home/acash/.local/bin/bench migrate
+2026-02-20 16:32:33,555 INFO /home/acash/.local/bin/bench build
+2026-02-20 16:33:39,277 INFO /home/acash/.local/bin/bench restart
+2026-02-20 16:45:33,807 INFO /home/acash/.local/bin/bench new-app lead_routing
+2026-02-20 16:45:33,809 LOG creating new app lead_routing
+2026-02-20 16:45:43,988 WARNING /home/acash/.local/bin/bench new-app lead_routing executed with exit code 1
+2026-02-20 16:47:09,533 INFO /home/acash/.local/bin/bench list-apps
+2026-02-20 16:49:51,740 INFO /home/acash/.local/bin/bench list-apps
+2026-02-20 16:50:30,438 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-20 16:54:26,472 INFO /home/acash/.local/bin/bench list-apps
+2026-02-20 16:55:00,596 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb
+2026-02-20 16:56:15,586 INFO /home/acash/.local/bin/bench list-apps
+2026-02-20 16:56:24,071 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb
+2026-02-20 16:57:22,108 INFO /home/acash/.local/bin/bench list-apps
+2026-02-20 16:57:59,985 INFO /home/acash/.local/bin/bench clear-cache
+2026-02-20 16:58:00,356 INFO /home/acash/.local/bin/bench clear-website-cache
+2026-02-20 16:58:00,963 INFO /home/acash/.local/bin/bench build --force
+2026-02-20 16:59:26,105 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb
+2026-02-20 17:00:12,872 INFO /home/acash/.local/bin/bench list-apps
+2026-02-20 17:00:32,649 INFO /home/acash/.local/bin/bench new-app lead_routing
+2026-02-20 17:00:32,653 LOG creating new app lead_routing
+2026-02-20 17:01:27,086 LOG Installing lead_routing
+2026-02-20 17:01:27,087 DEBUG cd /home/acash/frappe-bench && uv pip install --quiet --upgrade -e /home/acash/frappe-bench/apps/lead_routing  --python /home/acash/frappe-bench/env/bin/python
+2026-02-20 17:01:27,615 DEBUG bench build --app lead_routing
+2026-02-20 17:01:27,699 INFO /home/acash/.local/bin/bench build --app lead_routing
+2026-02-20 17:01:46,454 INFO /home/acash/.local/bin/bench --site ipshopy.localhost install-app lead_routing
+2026-02-20 17:04:32,764 INFO /home/acash/.local/bin/bench start
+2026-02-20 17:04:33,013 INFO /home/acash/.local/bin/bench serve --port 8000
+2026-02-20 17:04:33,016 INFO /home/acash/.local/bin/bench watch
+2026-02-20 17:04:33,016 INFO /home/acash/.local/bin/bench schedule
+2026-02-20 17:04:33,016 INFO /home/acash/.local/bin/bench worker
+2026-02-20 17:04:43,094 INFO /home/acash/.local/bin/bench clear-cache
+2026-02-20 17:05:01,458 INFO /home/acash/.local/bin/bench migrate
+2026-02-20 17:18:53,000 INFO /home/acash/.local/bin/bench restart
+2026-02-20 17:18:58,057 INFO /home/acash/.local/bin/bench migrate
+2026-02-20 17:19:31,961 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb
+2026-02-20 17:21:25,305 INFO /home/acash/.local/bin/bench restart
+2026-02-20 17:21:31,091 INFO /home/acash/.local/bin/bench migrate
+2026-02-20 17:22:05,430 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb
+2026-02-20 17:23:26,864 INFO /home/acash/.local/bin/bench restart
+2026-02-20 17:23:30,832 INFO /home/acash/.local/bin/bench migrate
+2026-02-20 17:24:15,809 INFO /home/acash/.local/bin/bench --site ipshopy.localhost set-config installed_apps ["frappe","crm","lead_routing"]
+2026-02-20 17:24:23,229 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-20 17:24:25,434 INFO /home/acash/.local/bin/bench clear-website-cache
+2026-02-20 17:24:26,963 INFO /home/acash/.local/bin/bench restart
+2026-02-20 17:24:35,973 INFO /home/acash/.local/bin/bench migrate
+2026-02-20 17:26:00,751 INFO /home/acash/.local/bin/bench setup requirements --force
+2026-02-20 17:26:00,782 WARNING /home/acash/.local/bin/bench setup requirements --force executed with exit code 2
+2026-02-20 17:26:21,203 INFO /home/acash/.local/bin/bench setup requirements --force
+2026-02-20 17:26:21,222 WARNING /home/acash/.local/bin/bench setup requirements --force executed with exit code 2
+2026-02-20 17:27:17,298 INFO /home/acash/.local/bin/bench --site ipshopy.localhost set-config installed_apps ["frappe","crm","lead_routing"]
+2026-02-20 17:27:45,546 INFO /home/acash/.local/bin/bench --site ipshopy.localhost migrate --skip-search-index
+2026-02-20 17:30:18,000 INFO /home/acash/.local/bin/bench setup requirements
+2026-02-20 17:30:18,019 DEBUG uv pip install --quiet --upgrade pip --python /home/acash/frappe-bench/env/bin/python
+2026-02-20 17:30:18,432 LOG Installing frappe
+2026-02-20 17:30:18,436 DEBUG cd /home/acash/frappe-bench && uv pip install --quiet --upgrade -e /home/acash/frappe-bench/apps/frappe  --python /home/acash/frappe-bench/env/bin/python
+2026-02-20 17:30:22,448 DEBUG cd /home/acash/frappe-bench/apps/frappe && yarn install --check-files
+2026-02-20 17:30:38,388 LOG Installing crm
+2026-02-20 17:30:38,388 DEBUG cd /home/acash/frappe-bench && uv pip install --quiet --upgrade -e /home/acash/frappe-bench/apps/crm  --python /home/acash/frappe-bench/env/bin/python
+2026-02-20 17:30:39,377 DEBUG cd /home/acash/frappe-bench/apps/crm && yarn install --check-files
+2026-02-20 17:31:01,790 LOG Installing lead_routing
+2026-02-20 17:31:01,791 DEBUG cd /home/acash/frappe-bench && uv pip install --quiet --upgrade -e /home/acash/frappe-bench/apps/lead_routing  --python /home/acash/frappe-bench/env/bin/python
+2026-02-20 17:31:07,948 INFO /home/acash/.local/bin/bench build
+2026-02-20 17:32:12,381 INFO /home/acash/.local/bin/bench --site ipshopy.localhost reinstall
+2026-02-20 17:34:43,046 INFO /home/acash/.local/bin/bench drop-site ipshopy.localhost
+2026-02-20 17:36:22,701 INFO /home/acash/.local/bin/bench new-site ipshopy.localhost
+2026-02-20 17:37:01,269 INFO /home/acash/.local/bin/bench --site ipshopy.localhost install-app crm
+2026-02-20 17:37:06,960 INFO /home/acash/.local/bin/bench --site ipshopy.localhost install-app lead_routing
+2026-02-20 17:37:13,843 INFO /home/acash/.local/bin/bench --site ipshopy.localhost migrate
+2026-02-20 17:37:25,834 INFO /home/acash/.local/bin/bench start
+2026-02-20 17:37:26,023 INFO /home/acash/.local/bin/bench watch
+2026-02-20 17:37:26,027 INFO /home/acash/.local/bin/bench schedule
+2026-02-20 17:37:26,030 INFO /home/acash/.local/bin/bench serve --port 8000
+2026-02-20 17:37:26,031 INFO /home/acash/.local/bin/bench worker
+2026-02-20 17:37:45,620 INFO /home/acash/.local/bin/bench --site ipshopy.localhost migrate
+2026-02-20 17:38:33,971 INFO /home/acash/.local/bin/bench restart
+2026-02-23 09:10:12,678 INFO /home/acash/.local/bin/bench start
+2026-02-23 09:10:13,331 INFO /home/acash/.local/bin/bench serve --port 8000
+2026-02-23 09:10:13,335 INFO /home/acash/.local/bin/bench worker
+2026-02-23 09:10:13,339 INFO /home/acash/.local/bin/bench watch
+2026-02-23 09:10:13,370 INFO /home/acash/.local/bin/bench schedule
+2026-02-23 09:51:20,645 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb
+2026-02-23 09:53:27,270 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb
+2026-02-23 09:54:17,478 INFO /home/acash/.local/bin/bench migrate
+2026-02-23 09:56:41,439 INFO /home/acash/.local/bin/bench --site ipshopy set-config developer_mode 1
+2026-02-23 09:56:41,913 INFO /home/acash/.local/bin/bench restart
+2026-02-23 09:56:54,866 INFO /home/acash/.local/bin/bench --site ipshopy.localhost set-config developer_mode 1
+2026-02-23 09:57:06,342 INFO /home/acash/.local/bin/bench restart
+2026-02-23 09:57:21,105 INFO /home/acash/.local/bin/bench new-app lead_routing
+2026-02-23 09:57:21,109 LOG creating new app lead_routing
+2026-02-23 09:59:05,057 LOG Installing lead_routing
+2026-02-23 09:59:05,058 DEBUG cd /home/acash/frappe-bench && uv pip install --quiet --upgrade -e /home/acash/frappe-bench/apps/lead_routing  --python /home/acash/frappe-bench/env/bin/python
+2026-02-23 09:59:05,990 DEBUG bench build --app lead_routing
+2026-02-23 09:59:06,099 INFO /home/acash/.local/bin/bench build --app lead_routing
+2026-02-23 09:59:23,370 INFO /home/acash/.local/bin/bench --site ipshopy.localhost install-app lead_routing
+2026-02-23 09:59:33,193 INFO /home/acash/.local/bin/bench --site ipshopy.localhost migrate
+2026-02-23 11:09:35,001 INFO /home/acash/.local/bin/bench build
+2026-02-23 11:11:30,650 INFO /home/acash/.local/bin/bench restart
+2026-02-23 11:11:55,357 INFO /home/acash/.local/bin/bench migrate
+2026-02-23 11:12:06,695 INFO /home/acash/.local/bin/bench restart
+2026-02-23 11:16:24,949 INFO /home/acash/.local/bin/bench --site ipshopy.localhost install-app crm
+2026-02-23 11:17:10,559 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-23 11:17:11,814 INFO /home/acash/.local/bin/bench --site ipshopy.localhost migrate
+2026-02-23 11:17:17,765 INFO /home/acash/.local/bin/bench build
+2026-02-23 11:17:40,713 INFO /home/acash/.local/bin/bench restart
+2026-02-23 11:18:45,597 INFO /home/acash/.local/bin/bench build
+2026-02-23 11:20:15,635 INFO /home/acash/.local/bin/bench restart
+2026-02-23 11:20:20,498 INFO /home/acash/.local/bin/bench restart
+2026-02-23 15:28:51,001 INFO /home/acash/.local/bin/bench restart
+2026-02-23 16:16:26,027 INFO /home/acash/.local/bin/bench --site ipshopy.localhost migrate
+2026-02-23 16:16:55,912 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.setup.run_setup
+2026-02-23 16:20:58,467 INFO /home/acash/.local/bin/bench --site ipshopy.localhost run-tests --app lead_routing --failfast
+2026-02-23 16:21:08,119 INFO /home/acash/.local/bin/bench --site ipshopy.localhost set-config allow_tests true
+2026-02-23 16:21:13,992 INFO /home/acash/.local/bin/bench --site ipshopy.localhost run-tests --app lead_routing --failfast
+2026-02-23 16:21:36,442 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-23 16:24:35,172 INFO /home/acash/.local/bin/bench build
+2026-02-23 16:26:31,359 INFO /home/acash/.local/bin/bench migrate
+2026-02-23 16:27:00,599 INFO /home/acash/.local/bin/bench restart
+2026-02-23 16:28:16,544 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-23 16:28:18,808 INFO /home/acash/.local/bin/bench build --app lead_routing
+2026-02-23 16:28:31,044 INFO /home/acash/.local/bin/bench --site ipshopy.localhost run-tests --app lead_routing --failfast
+2026-02-23 16:30:11,467 INFO /home/acash/.local/bin/bench build
+2026-02-23 16:31:54,560 INFO /home/acash/.local/bin/bench migrate
+2026-02-23 16:32:10,614 INFO /home/acash/.local/bin/bench clear-cache
+2026-02-23 16:32:14,696 INFO /home/acash/.local/bin/bench restart
+2026-02-23 16:43:24,289 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-23 16:46:49,678 INFO /home/acash/.local/bin/bench build
+2026-02-23 16:48:35,384 INFO /home/acash/.local/bin/bench migrate
+2026-02-23 16:48:47,869 INFO /home/acash/.local/bin/bench restart
+2026-02-23 16:55:05,626 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-23 16:55:28,217 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-23 16:56:32,915 INFO /home/acash/.local/bin/bench restart
+2026-02-23 16:56:35,143 INFO /home/acash/.local/bin/bench migrate
+2026-02-23 16:57:03,921 INFO /home/acash/.local/bin/bench clear-cache
+2026-02-23 17:04:37,122 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-23 17:05:46,748 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-23 17:08:52,077 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-23 17:08:53,085 INFO /home/acash/.local/bin/bench --site ipshopy.localhost migrate
+2026-02-23 17:09:09,465 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-23 17:39:46,724 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-23 17:40:24,780 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-23 17:40:36,834 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-23 17:41:09,857 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-23 17:45:28,133 INFO /home/acash/.local/bin/bench build
+2026-02-23 17:46:33,709 INFO /home/acash/.local/bin/bench migrate
+2026-02-23 17:46:42,078 INFO /home/acash/.local/bin/bench restart
+2026-02-23 17:48:58,683 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-23 17:49:16,467 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-23 17:50:25,584 INFO /home/acash/.local/bin/bench clear-cachr
+2026-02-23 17:50:28,217 INFO /home/acash/.local/bin/bench clear-cache
+2026-02-23 17:50:33,383 INFO /home/acash/.local/bin/bench build
+2026-02-23 17:51:36,121 INFO /home/acash/.local/bin/bench migrate
+2026-02-23 17:51:43,406 INFO /home/acash/.local/bin/bench restart
+2026-02-23 17:51:43,646 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-23 17:54:47,964 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-23 17:55:02,669 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-23 17:55:39,131 INFO /home/acash/.local/bin/bench build
+2026-02-23 17:56:39,412 INFO /home/acash/.local/bin/bench migrate
+2026-02-23 17:56:45,705 INFO /home/acash/.local/bin/bench restart
+2026-02-23 18:11:33,406 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-23 18:11:44,642 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-24 09:19:21,278 INFO /home/acash/.local/bin/bench start
+2026-02-24 09:19:21,443 INFO /home/acash/.local/bin/bench watch
+2026-02-24 09:19:21,443 INFO /home/acash/.local/bin/bench schedule
+2026-02-24 09:19:21,462 INFO /home/acash/.local/bin/bench serve --port 8000
+2026-02-24 09:19:21,463 INFO /home/acash/.local/bin/bench worker
+2026-02-24 09:38:01,409 INFO /home/acash/.local/bin/bench --site ipshopy.localhost migrate
+2026-02-24 09:38:13,504 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 09:40:49,297 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute frappe.get_all --args=["User", {"enabled": 1, "user_type": "System User"}, ["name", "full_name"]]
+2026-02-24 09:40:57,656 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute frappe.get_all --args=["Department Pipeline Stage", {"enabled": 1}, ["name", "stage_order", "stage_name"]]
+2026-02-24 09:42:48,643 INFO /home/acash/.local/bin/bench build
+2026-02-24 09:45:11,090 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 09:45:17,113 INFO /home/acash/.local/bin/bench restart
+2026-02-24 10:01:21,842 INFO /home/acash/.local/bin/bench build
+2026-02-24 10:02:19,652 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 10:02:26,839 INFO /home/acash/.local/bin/bench restart
+2026-02-24 10:19:06,356 INFO /home/acash/.local/bin/bench --site ipshopy.localhost migrate
+2026-02-24 10:19:20,509 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-24 10:20:18,060 INFO /home/acash/.local/bin/bench build
+2026-02-24 10:21:13,811 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 10:21:28,070 INFO /home/acash/.local/bin/bench restart
+2026-02-24 10:51:01,071 INFO /home/acash/.local/bin/bench --site ipshopy.localhost migrate
+2026-02-24 10:51:25,687 INFO /home/acash/.local/bin/bench --site ipshopy.localhost migrate
+2026-02-24 10:51:39,351 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-24 10:51:39,962 INFO /home/acash/.local/bin/bench build --app lead_routing
+2026-02-24 10:52:21,588 INFO /home/acash/.local/bin/bench build
+2026-02-24 10:53:15,520 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 10:53:21,737 INFO /home/acash/.local/bin/bench restart
+2026-02-24 11:01:28,531 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-24 11:01:29,219 INFO /home/acash/.local/bin/bench build --app lead_routing
+2026-02-24 11:01:39,042 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute frappe.db.sql --args "UPDATE `tabCRM Lead` cl INNER JOIN `tabToDo` t ON t.reference_name = cl.name AND t.reference_type = 'CRM Lead' AND t.status = 'Open' SET cl.lead_owner = t.allocated_to WHERE cl.lead_owner IS NULL OR cl.lead_owner = '' OR cl.lead_owner != t.allocated_to"
+2026-02-24 11:01:48,109 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 11:04:19,101 INFO /home/acash/.local/bin/bench --site ipshopy.localhost set-config developer_mode 1
+2026-02-24 11:04:19,403 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute frappe.db.sql --kwargs {"query": "UPDATE `tabCRM Lead` cl INNER JOIN `tabToDo` t ON t.reference_name = cl.name AND t.reference_type = \CRM Lead\\ AND t.status = \Open\\ SET cl.lead_owner = t.allocated_to"}
+2026-02-24 11:04:28,654 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute frappe.db.sql --kwargs {"query": "UPDATE `tabCRM Lead` cl JOIN `tabToDo` t ON t.reference_name=cl.name AND t.reference_type=\"CRM Lead\" AND t.status=\"Open\" SET cl.lead_owner=t.allocated_to"}
+2026-02-24 11:05:31,118 INFO /home/acash/.local/bin/bench build
+2026-02-24 11:06:24,183 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 11:06:28,434 INFO /home/acash/.local/bin/bench restart
+2026-02-24 11:11:17,816 INFO /home/acash/.local/bin/bench build
+2026-02-24 11:12:10,012 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 11:12:15,251 INFO /home/acash/.local/bin/bench restart
+2026-02-24 11:16:01,006 INFO /home/acash/.local/bin/bench build
+2026-02-24 11:16:55,480 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 11:17:00,830 INFO /home/acash/.local/bin/bench restart
+2026-02-24 11:25:58,550 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-24 11:25:59,194 INFO /home/acash/.local/bin/bench build --app lead_routing
+2026-02-24 11:38:35,498 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-24 11:38:37,054 INFO /home/acash/.local/bin/bench build --app lead_routing
+2026-02-24 11:40:19,121 INFO /home/acash/.local/bin/bench build
+2026-02-24 11:41:52,202 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 11:42:09,364 INFO /home/acash/.local/bin/bench restart
+2026-02-24 11:48:09,739 INFO /home/acash/.local/bin/bench build
+2026-02-24 11:49:51,538 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 11:49:59,970 INFO /home/acash/.local/bin/bench restart
+2026-02-24 11:51:23,366 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 11:51:42,658 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 11:52:03,426 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 11:52:57,551 INFO /home/acash/.local/bin/bench build
+2026-02-24 11:56:06,135 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 11:58:50,976 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 12:03:56,601 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-24 12:03:57,750 INFO /home/acash/.local/bin/bench restart
+2026-02-24 12:04:32,465 INFO /home/acash/.local/bin/bench build
+2026-02-24 12:06:42,080 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 12:06:49,662 INFO /home/acash/.local/bin/bench restart
+2026-02-24 12:09:11,962 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 12:09:25,440 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 12:09:42,743 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 12:09:54,598 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 12:10:16,812 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 12:10:44,825 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute /home/acash/frappe-bench/test_hierarchy.py:run
+2026-02-24 12:11:09,111 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute test_hierarchy.run --args 
+2026-02-24 12:11:24,857 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 12:13:17,403 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-24 12:13:18,409 INFO /home/acash/.local/bin/bench restart
+2026-02-24 12:14:14,200 INFO /home/acash/.local/bin/bench build
+2026-02-24 12:15:43,155 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 12:16:04,465 INFO /home/acash/.local/bin/bench restart
+2026-02-24 12:47:19,438 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 12:55:22,228 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 13:06:54,199 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, stage_name, department_role, manager_role FROM `tabDepartment Pipeline Stage`;
+2026-02-24 13:07:03,272 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT parent, role, `read`, `write`, `submit` FROM tabDocPerm WHERE parent='CRM Lead';
+2026-02-24 13:07:18,223 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT parent, user FROM `tabDepartment Team Member`;
+2026-02-24 13:07:26,553 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT parent, role FROM `tabHas Role` WHERE parent IN ('wer@gmail.com', 'susaraakash4@gmail.com', 'jak@gmail.com', 'abc@gmail.com', 'qwerty@gmail.com');
+2026-02-24 13:07:46,798 INFO /home/acash/.local/bin/bench --site all execute test_route.py
+2026-02-24 13:08:15,112 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute test_route.run
+2026-02-24 13:08:42,000 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.test_route.run
+2026-02-24 13:08:54,733 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, email, lead_owner FROM `tabCRM Lead` WHERE name='CRM-LEAD-2026-00014';
+2026-02-24 13:09:08,263 INFO /home/acash/.local/bin/bench --site all mariadb -e UPDATE `tabCRM Lead` SET email='test_client@example.com' WHERE name='CRM-LEAD-2026-00014';
+2026-02-24 13:09:20,869 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.test_route.run
+2026-02-24 13:09:51,800 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.test_route.run
+2026-02-24 13:10:07,031 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.test_route2.run
+2026-02-24 13:10:48,409 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.test_route2.run
+2026-02-24 13:11:51,090 INFO /home/acash/.local/bin/bench build
+2026-02-24 13:13:38,882 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 13:13:50,078 INFO /home/acash/.local/bin/bench restart
+2026-02-24 13:29:28,539 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT parent, role, `read`, `write`, `create`, `if_owner` FROM tabDocPerm WHERE parent='CRM Lead';
+2026-02-24 13:29:50,602 INFO /home/acash/.local/bin/bench --site all execute fix_lead_perms.run
+2026-02-24 13:30:23,085 INFO /home/acash/.local/bin/bench --site all execute lead_routing.fix_lead_perms.run
+2026-02-24 13:30:36,422 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT parent, role, `read`, `write`, `create`, `if_owner` FROM tabDocPerm WHERE parent='CRM Lead';
+2026-02-24 13:31:12,745 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, user, allow, for_value FROM `tabUser Permission` WHERE allow='CRM Lead' LIMIT 5;
+2026-02-24 13:31:23,462 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, ignore_user_permissions FROM `tabRole` WHERE name IN ('Seller Onboarding User', 'Product Listing User', 'Google Ads User', 'Account Manager User');
+2026-02-24 13:33:18,518 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute test_history.run
+2026-02-24 13:34:08,038 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.test_history.run
+2026-02-24 13:36:14,852 INFO /home/acash/.local/bin/bench build
+2026-02-24 13:37:57,553 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 13:38:07,914 INFO /home/acash/.local/bin/bench restart
+2026-02-24 13:40:12,106 INFO /home/acash/.local/bin/bench clear-cache
+2026-02-24 14:04:34,403 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.test_create_lead.run
+2026-02-24 14:53:25,315 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute --args lead_routing.test_create_lead.run
+2026-02-24 15:01:08,546 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.test_create_lead.run
+2026-02-24 15:01:30,248 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.test_create_lead.run
+2026-02-24 15:02:09,844 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.test_create_lead.run
+2026-02-24 15:04:57,494 INFO /home/acash/.local/bin/bench buil
+2026-02-24 15:05:01,171 INFO /home/acash/.local/bin/bench build
+2026-02-24 15:06:08,627 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 15:06:15,561 INFO /home/acash/.local/bin/bench restart
+2026-02-24 15:09:22,934 INFO /home/acash/.local/bin/bench build
+2026-02-24 15:10:22,979 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 15:10:28,802 INFO /home/acash/.local/bin/bench restart
+2026-02-24 15:15:51,573 INFO /home/acash/.local/bin/bench build
+2026-02-24 15:16:43,241 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 15:16:48,557 INFO /home/acash/.local/bin/bench restart
+2026-02-24 16:24:49,301 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute sync_fb.sync
+2026-02-24 16:25:09,922 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute crm.sync_fb.sync
+2026-02-24 16:25:43,571 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute crm.sync_fb.map_fields
+2026-02-24 16:26:10,398 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute crm.crm.sync_fb.map_fields
+2026-02-24 16:26:45,496 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 16:27:18,833 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute crm.api.sync_fb.map_fields
+2026-02-24 16:28:56,896 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 16:29:30,416 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 16:31:49,184 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 16:32:26,581 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute crm.api.create_sources.create_sources
+2026-02-24 16:33:11,030 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 16:34:17,517 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 16:34:41,557 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-24 16:34:42,718 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 16:35:13,304 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-24 16:36:36,783 INFO /home/acash/.local/bin/bench build
+2026-02-24 16:38:21,294 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 16:39:32,034 INFO /home/acash/.local/bin/bench restart
+2026-02-24 16:52:15,666 INFO /home/acash/.local/bin/bench --site ipshopy.localhost doctor
+2026-02-24 16:52:46,702 INFO /home/acash/.local/bin/bench --site ipshopy.localhost enable-scheduler
+2026-02-24 16:52:47,615 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-24 16:53:02,748 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute frappe.utils.scheduler.enqueue_events
+2026-02-24 16:53:29,964 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute frappe.utils.scheduler.enqueue_events --args {"site": "ipshopy.localhost"}
+2026-02-24 16:55:15,382 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute frappe.utils.scheduler.sync_jobs
+2026-02-24 16:56:52,947 INFO /home/acash/.local/bin/bench restart
+2026-02-24 16:58:03,435 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute crm.api.department.get_user_departments
+2026-02-24 17:04:02,910 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute crm.lead_syncing.background_sync.sync_leads_from_sources_2_minutes
+2026-02-24 17:06:24,948 INFO /home/acash/.local/bin/bench restart
+2026-02-24 17:06:36,536 INFO /home/acash/.local/bin/bench clear-cache
+2026-02-24 17:06:38,590 INFO /home/acash/.local/bin/bench restart
+2026-02-24 17:08:00,746 INFO /home/acash/.local/bin/bench migrate
+2026-02-24 17:10:07,474 INFO /home/acash/.local/bin/bench build
+2026-02-24 17:11:46,541 INFO /home/acash/.local/bin/bench restart
+2026-02-24 17:28:32,701 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-24 17:28:33,864 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute crm.api.department.get_user_departments
+2026-02-24 17:30:30,157 INFO /home/acash/.local/bin/bench restart
+2026-02-24 17:30:31,585 INFO /home/acash/.local/bin/bench clear-cache
+2026-02-24 17:30:40,884 INFO /home/acash/.local/bin/bench --site ipshopy.localhost migrate
+2026-02-24 17:30:59,214 INFO /home/acash/.local/bin/bench --site ipshopy.localhost build
+2026-02-25 09:13:25,118 INFO /home/acash/.local/bin/bench start
+2026-02-25 09:13:25,579 INFO /home/acash/.local/bin/bench worker
+2026-02-25 09:13:25,582 INFO /home/acash/.local/bin/bench serve --port 8000
+2026-02-25 09:13:25,611 INFO /home/acash/.local/bin/bench schedule
+2026-02-25 09:13:25,613 INFO /home/acash/.local/bin/bench watch
+2026-02-25 09:42:03,026 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-25 09:42:03,942 INFO /home/acash/.local/bin/bench restart
+2026-02-25 09:42:57,642 INFO /home/acash/.local/bin/bench build
+2026-02-25 09:44:27,189 INFO /home/acash/.local/bin/bench migrate
+2026-02-25 09:44:37,079 INFO /home/acash/.local/bin/bench restart
+2026-02-25 09:48:41,574 INFO /home/acash/.local/bin/bench build
+2026-02-25 09:50:07,853 INFO /home/acash/.local/bin/bench migrate
+2026-02-25 09:50:17,938 INFO /home/acash/.local/bin/bench restart
+2026-02-25 09:52:26,076 INFO /home/acash/.local/bin/bench build
+2026-02-25 09:53:52,981 INFO /home/acash/.local/bin/bench migrate
+2026-02-25 09:53:59,870 INFO /home/acash/.local/bin/bench restart
+2026-02-25 09:56:41,474 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-25 09:57:39,774 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb --execute SELECT error FROM `tabError Log` ORDER BY creation DESC LIMIT 3 \G
+2026-02-25 09:59:03,639 INFO /home/acash/.local/bin/bench build
+2026-02-25 10:00:23,682 INFO /home/acash/.local/bin/bench migrate
+2026-02-25 10:00:29,852 INFO /home/acash/.local/bin/bench restart
+2026-02-25 10:02:51,606 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb --execute SHOW PROCESSLIST;
+2026-02-25 10:02:59,205 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb --execute SELECT * FROM information_schema.INNODB_TRX\G
+2026-02-25 10:03:09,239 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb --execute SHOW FULL PROCESSLIST;
+2026-02-25 10:04:09,982 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb --execute 
+SELECT CONCAT('KILL ', id, ';') AS kill_cmd
+FROM information_schema.processlist
+WHERE command = 'Sleep' AND time > 30;
+
+2026-02-25 10:04:22,915 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb --execute SET GLOBAL innodb_lock_wait_timeout=120;
+2026-02-25 10:04:23,391 INFO /home/acash/.local/bin/bench restart
+2026-02-25 10:04:23,887 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-25 10:06:49,559 INFO /home/acash/.local/bin/bench build
+2026-02-25 10:08:20,037 INFO /home/acash/.local/bin/bench migrate
+2026-02-25 10:08:26,717 INFO /home/acash/.local/bin/bench restart
+2026-02-25 10:14:08,383 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-25 10:21:11,884 INFO /home/acash/.local/bin/bench build
+2026-02-25 10:22:38,548 INFO /home/acash/.local/bin/bench migrate
+2026-02-25 10:22:49,013 INFO /home/acash/.local/bin/bench restart
+2026-02-25 10:31:51,809 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-25 11:54:25,063 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-25 17:27:11,963 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, stage_name, stage_order FROM `tabDepartment Pipeline Stage` ORDER BY stage_order;
+2026-02-25 17:27:33,326 INFO /home/acash/.local/bin/bench --site all mariadb -e SHOW TABLES LIKE '%facebook%';
+2026-02-25 17:27:48,044 INFO /home/acash/.local/bin/bench --site all mariadb -e SHOW TABLES LIKE '%fb%';
+2026-02-25 17:28:23,548 INFO /home/acash/.local/bin/bench --site all mariadb -e SHOW TABLES LIKE '%crm%';
+2026-02-25 17:28:55,272 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name FROM tabDocType WHERE name LIKE '%Face%';
+2026-02-25 17:34:30,298 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-25 17:34:31,171 INFO /home/acash/.local/bin/bench --site ipshopy.localhost build --app lead_routing
+2026-02-25 17:35:50,536 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.test_route_back.run
+2026-02-25 17:36:54,200 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.test_route_back.run
+2026-02-25 17:37:15,477 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, current_department FROM `tabCRM Lead` WHERE current_department='Account Manager';
+2026-02-25 17:37:28,364 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, current_department FROM `tabCRM Lead`;
+2026-02-25 17:37:55,441 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, current_department FROM `tabCRM Lead` WHERE name='CRM-LEAD-2026-00014';
+2026-02-25 17:38:11,781 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.test_route_back2.run
+2026-02-25 17:39:30,294 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.test_route_back2.run
+2026-02-25 17:40:04,569 INFO /home/acash/.local/bin/bench --site all mariadb -e DESCRIBE `tabFacebook Lead Form`;
+2026-02-25 17:41:46,047 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute frappe.core.doctype.doctype.doctype.get_meta --args ["Facebook Lead Form"]
+2026-02-25 17:42:03,702 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT fieldname, fieldtype FROM `tabDocField` WHERE parent='Facebook Lead Form';
+2026-02-25 17:42:35,227 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT fieldname, fieldtype FROM `tabDocField` WHERE parent='Facebook Lead Form Question';
+2026-02-25 17:45:41,892 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT fieldname, fieldtype FROM `tabDocField` WHERE parent='CRM Lead';
+2026-02-25 17:46:11,389 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT module FROM tabDocType WHERE name='Facebook Lead Form';
+2026-02-25 17:47:36,389 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT fieldname, fieldtype FROM `tabDocField` WHERE parent='Facebook Page';
+2026-02-25 17:48:19,549 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, page_name, access_token FROM `tabFacebook Page`;
+2026-02-26 09:28:35,242 INFO /home/acash/.local/bin/bench start
+2026-02-26 09:28:35,508 INFO /home/acash/.local/bin/bench serve --port 8000
+2026-02-26 09:28:35,516 INFO /home/acash/.local/bin/bench watch
+2026-02-26 09:28:35,516 INFO /home/acash/.local/bin/bench schedule
+2026-02-26 09:28:35,523 INFO /home/acash/.local/bin/bench worker
+2026-02-26 10:02:30,154 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, allocated_to, reference_type, reference_name FROM `tabToDo` WHERE status='Open' AND reference_type='CRM Lead' LIMIT 5;
+2026-02-26 10:02:46,727 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, parent, department, action, assigned_user, entered_at, exited_at FROM `tabLead Department Log` LIMIT 5;
+2026-02-26 10:04:05,282 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.test_lead_history.run
+2026-02-26 10:36:32,916 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.test_lead_history_abc.run
+2026-02-26 10:37:57,185 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, allocated_to, reference_type, reference_name FROM `tabToDo` WHERE allocated_to='abc@gmail.com' AND status='Open' AND reference_type='CRM Lead';
+2026-02-26 10:38:42,817 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, parent, department, action, assigned_user, entered_at, exited_at FROM `tabLead Department Log` WHERE assigned_user='abc@gmail.com' LIMIT 5;
+2026-02-26 10:54:48,509 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, allocated_to, reference_type, reference_name FROM `tabToDo` WHERE allocated_to='abc@gmail.com' AND status='Open' AND reference_type='CRM Lead';
+2026-02-26 10:54:56,139 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, parent, department, action, assigned_user, entered_at, exited_at FROM `tabLead Department Log` WHERE assigned_user='abc@gmail.com';
+2026-02-26 10:55:49,387 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.test_lead_history2.run
+2026-02-26 10:56:05,142 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute apps.lead_routing.lead_routing.test_lead_history2.run
+2026-02-26 10:56:25,491 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-26 10:56:32,013 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, allocated_to, reference_type, reference_name FROM `tabToDo` WHERE allocated_to='xyz@example.com' AND status='Open' AND reference_type='CRM Lead';
+2026-02-26 12:32:11,662 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute apps.lead_routing.lead_routing.sync_fb_forms.run
+2026-02-26 12:32:51,405 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.sync_fb_forms.run
+2026-02-26 12:33:41,371 INFO /home/acash/.local/bin/bench build
+2026-02-26 12:35:14,511 INFO /home/acash/.local/bin/bench migrate
+2026-02-26 12:35:25,873 INFO /home/acash/.local/bin/bench restart
+2026-02-26 12:40:03,008 INFO /home/acash/.local/bin/bench execute lead_routing.test_lead_history2.run
+2026-02-26 12:41:52,600 INFO /home/acash/.local/bin/bench execute frappe.core.doctype.user.user.get_system_users --args []
+2026-02-26 12:42:20,328 INFO /home/acash/.local/bin/bench execute frappe.get_list --args ["CRM Lead", {"limit": 1}]
+2026-02-26 12:43:00,822 INFO /home/acash/.local/bin/bench execute frappe.core.doctype.user.user.get_system_users --args []
+2026-02-26 12:43:33,047 INFO /home/acash/.local/bin/bench console
+2026-02-26 12:44:06,332 INFO /home/acash/.local/bin/bench execute frappe.get_all --args ["Lead Department Log", {"fields": ["name", "parent", "assigned_user", "action", "entered_at", "exited_at"]}, {"limit": 10}]
+2026-02-26 12:44:33,505 INFO /home/acash/.local/bin/bench console
+2026-02-26 12:52:27,976 INFO /home/acash/.local/bin/bench execute frappe.get_list --args ["CRM Lead", {"filters": {"department_history": ["like", "%"]}}]
+2026-02-26 13:39:27,569 INFO /home/acash/.local/bin/bench build
+2026-02-26 13:41:37,033 INFO /home/acash/.local/bin/bench migrate
+2026-02-26 13:41:50,831 INFO /home/acash/.local/bin/bench restart
+2026-02-26 14:00:59,558 INFO /home/acash/.local/bin/bench execute lead_routing.test_lead_history2.run
+2026-02-26 14:01:08,945 INFO /home/acash/.local/bin/bench console
+2026-02-26 14:01:33,120 INFO /home/acash/.local/bin/bench console
+2026-02-26 14:01:41,442 INFO /home/acash/.local/bin/bench console
+2026-02-26 14:05:01,847 INFO /home/acash/.local/bin/bench build
+2026-02-26 14:06:53,361 INFO /home/acash/.local/bin/bench migrate
+2026-02-26 14:07:04,499 INFO /home/acash/.local/bin/bench restart
+2026-02-26 14:56:24,348 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, shift_name, start_time, end_time, enabled FROM `tabDepartment Shift`;
+2026-02-26 14:56:38,332 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT parent, user, is_active FROM `tabDepartment Team Member` WHERE parent='Seller Onboarding';
+2026-02-26 14:56:45,124 INFO /home/acash/.local/bin/bench --site all mariadb -e DESCRIBE `tabDepartment Team Member`;
+2026-02-26 14:57:59,476 INFO /home/acash/.local/bin/bench --site all mariadb -e DESCRIBE `tabDepartment Shift`;
+2026-02-26 14:59:40,059 INFO /home/acash/.local/bin/bench --site ipshopy.localhost migrate
+2026-02-26 14:59:50,891 INFO /home/acash/.local/bin/bench --site all mariadb -e DESCRIBE `tabDepartment Team Member`;
+2026-02-26 14:59:51,137 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT parent, user, shift, is_active FROM `tabDepartment Team Member`;
+2026-02-26 15:02:35,331 INFO /home/acash/.local/bin/bench build
+2026-02-26 15:03:45,775 INFO /home/acash/.local/bin/bench migrate
+2026-02-26 15:03:50,898 INFO /home/acash/.local/bin/bench restart
+2026-02-26 15:28:15,836 INFO /home/acash/.local/bin/bench build
+2026-02-26 15:29:29,473 INFO /home/acash/.local/bin/bench migrate
+2026-02-26 15:29:36,958 INFO /home/acash/.local/bin/bench restart
+2026-02-26 15:33:14,349 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, shift_name, start_time, end_time, enabled FROM `tabDepartment Shift`;
+2026-02-26 15:33:37,923 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT parent, user, shift, is_active FROM `tabDepartment Team Member`;
+2026-02-26 15:33:47,953 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, current_department, current_shift, lead_owner, creation FROM `tabCRM Lead` ORDER BY creation DESC LIMIT 5;
+2026-02-26 15:34:02,449 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, allocated_to, reference_name FROM `tabToDo` WHERE reference_type='CRM Lead' AND reference_name='CRM-LEAD-2026-04058' AND status='Open';
+2026-02-26 15:35:08,700 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.debug_shift.run
+2026-02-26 15:35:24,883 INFO /home/acash/.local/bin/bench --site all mariadb -e UPDATE `tabDepartment Shift` SET start_time='07:00:00', end_time='14:00:00' WHERE name='Morning Shift'; UPDATE `tabDepartment Shift` SET start_time='16:00:00', end_time='01:00:00' WHERE name='Night Shift';
+2026-02-26 15:35:52,865 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, shift_name, start_time, end_time FROM `tabDepartment Shift`;
+2026-02-26 15:36:02,419 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.debug_shift.run
+2026-02-26 15:36:20,713 INFO /home/acash/.local/bin/bench --site all mariadb -e UPDATE `tabDepartment Shift` SET start_time='14:00:00', end_time='01:00:00' WHERE name='Night Shift';
+2026-02-26 15:36:40,375 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.debug_shift.run
+2026-02-26 15:36:49,187 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-26 15:37:20,100 INFO /home/acash/.local/bin/bench build
+2026-02-26 15:38:29,815 INFO /home/acash/.local/bin/bench migrate
+2026-02-26 15:40:07,338 INFO /home/acash/.local/bin/bench restart
+2026-02-26 15:44:25,659 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT parent, user, shift, is_active FROM `tabDepartment Team Member` ORDER BY parent, shift;
+2026-02-26 15:45:22,175 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-26 15:50:35,248 INFO /home/acash/.local/bin/bench build
+2026-02-26 15:51:32,141 INFO /home/acash/.local/bin/bench migrate
+2026-02-26 15:51:39,315 INFO /home/acash/.local/bin/bench restart
+2026-02-26 15:54:58,143 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT parent, user, shift, is_active FROM `tabDepartment Team Member` ORDER BY parent, shift;
+2026-02-26 15:54:58,537 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, current_department, current_shift, lead_owner FROM `tabCRM Lead` ORDER BY creation DESC LIMIT 5;
+2026-02-26 15:55:35,823 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT parent, role FROM `tabHas Role` WHERE parent='aakashsusar1234@gmail.com';
+2026-02-26 15:55:45,390 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, email, enabled FROM `tabUser` WHERE email LIKE '%aakash%';
+2026-02-26 15:55:59,848 INFO /home/acash/.local/bin/bench --site ipshopy.localhost console
+2026-02-26 15:56:11,823 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT parent, user, shift, is_active FROM `tabDepartment Team Member` ORDER BY parent, shift;
+2026-02-26 15:56:12,215 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT parent, role FROM `tabHas Role` WHERE parent='aakashsusar1234@gmail.com';
+2026-02-26 15:56:18,871 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-26 16:31:02,675 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, shift_name, start_time, end_time, enabled FROM `tabDepartment Shift`;
+2026-02-26 16:31:03,071 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT parent, user, shift, is_active FROM `tabDepartment Team Member` ORDER BY parent, shift;
+2026-02-26 16:31:15,342 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, email, enabled FROM `tabUser` WHERE email IN ('thanos@gmail.com', 'darth@gmail.com', 'achintya.choudhari@gmail.com');
+2026-02-26 16:31:53,557 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, creation, method, error FROM `tabError Log` ORDER BY creation DESC LIMIT 3;
+2026-02-26 16:32:08,421 INFO /home/acash/.local/bin/bench --site all mariadb -e SELECT name, lead_owner, current_shift, current_department FROM `tabCRM Lead` WHERE lead_owner IS NULL OR lead_owner='' ORDER BY creation DESC LIMIT 5;
+2026-02-26 16:32:55,580 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-26 16:32:56,175 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-website-cache
+2026-02-26 16:43:55,985 INFO /home/acash/.local/bin/bench --site crm.localhost execute frappe.client.get_list --kwargs {"doctype": "Lead Department Log", "filters": {}, "fields": ["parent", "department", "assigned_user", "action", "entered_at", "exited_at"], "limit_page_length": 20, "order_by": "creation desc"}
+2026-02-26 16:44:09,484 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute frappe.client.get_list --kwargs {"doctype": "Lead Department Log", "filters": {}, "fields": ["parent", "department", "assigned_user", "action", "entered_at", "exited_at"], "limit_page_length": 20, "order_by": "creation desc"}
+2026-02-26 16:44:16,905 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb -e SELECT parent, department, assigned_user, action, entered_at, exited_at FROM `tabLead Department Log` ORDER BY creation DESC LIMIT 20;
+2026-02-26 16:44:43,178 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb -e 
+-- Check: are there NULLs for assigned_user?
+SELECT COUNT(*) as total_logs, SUM(assigned_user IS NULL) as null_users, SUM(assigned_user IS NOT NULL) as has_users FROM `tabLead Department Log`;
+
+2026-02-26 16:44:47,713 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb -e 
+-- Check lead history for a specific user: aakashsusar1234@gmail.com
+SELECT parent, department, action, assigned_user, entered_at, exited_at 
+FROM `tabLead Department Log` 
+WHERE assigned_user = 'aakashsusar1234@gmail.com' 
+ORDER BY entered_at DESC 
+LIMIT 15;
+
+2026-02-26 16:45:11,294 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb -e 
+-- Check open ToDos for aakashsusar1234@gmail.com
+SELECT reference_name, status FROM `tabToDo` WHERE allocated_to='aakashsusar1234@gmail.com' AND reference_type='CRM Lead' AND status='Open' LIMIT 10;
+
+2026-02-26 16:47:53,397 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.patches.backfill_assigned_user.execute
+2026-02-26 16:48:13,539 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb -e 
+SELECT COUNT(*) as total_logs, 
+       SUM(assigned_user IS NULL OR assigned_user = '') as null_users, 
+       SUM(assigned_user IS NOT NULL AND assigned_user != '') as has_users 
+FROM `tabLead Department Log`;
+
+2026-02-26 16:48:25,781 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb -e 
+-- Check the 8 remaining NULL entries
+SELECT ldl.name, ldl.parent, ldl.department, ldl.action, ldl.entered_at, ldl.exited_at
+FROM `tabLead Department Log` ldl
+WHERE ldl.assigned_user IS NULL OR ldl.assigned_user = ''
+ORDER BY ldl.creation DESC;
+
+2026-02-26 16:48:51,138 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.api.lead_history.get_my_lead_history --kwargs {"user": "aakashsusar1234@gmail.com"}
+2026-02-26 16:49:05,752 INFO /home/acash/.local/bin/bench --site ipshopy.localhost execute lead_routing.api.lead_history.get_my_lead_history --kwargs {"user": "aakashsusar1234@gmail.com"}
+2026-02-26 16:51:58,935 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb -e 
+-- Verify lead history for aakashsusar1234@gmail.com
+-- Currently assigned (open ToDos)
+SELECT COUNT(*) as currently_assigned FROM `tabToDo` 
+WHERE allocated_to='aakashsusar1234@gmail.com' AND reference_type='CRM Lead' AND status='Open';
+
+-- Historical leads (from Lead Department Log, excluding currently assigned)
+SELECT COUNT(DISTINCT parent) as completed_leads FROM `tabLead Department Log`
+WHERE assigned_user='aakashsusar1234@gmail.com' 
+AND parent NOT IN (
+    SELECT reference_name FROM `tabToDo` 
+    WHERE allocated_to='aakashsusar1234@gmail.com' AND reference_type='CRM Lead' AND status='Open'
+);
+
+-- Total unique leads handled
+SELECT COUNT(DISTINCT parent) as total_handled FROM `tabLead Department Log`
+WHERE assigned_user='aakashsusar1234@gmail.com';
+
+2026-02-26 16:52:14,537 INFO /home/acash/.local/bin/bench --site ipshopy.localhost mariadb -e 
+-- Verify multiple users have history
+SELECT assigned_user, COUNT(DISTINCT parent) as leads_handled
+FROM `tabLead Department Log`
+WHERE assigned_user IS NOT NULL AND assigned_user != ''
+GROUP BY assigned_user
+ORDER BY leads_handled DESC
+LIMIT 10;
+
+2026-02-26 16:53:47,652 INFO /home/acash/.local/bin/bench build
+2026-02-26 16:55:25,069 INFO /home/acash/.local/bin/bench migrate
+2026-02-26 16:55:38,033 INFO /home/acash/.local/bin/bench restart
+2026-02-26 16:56:24,709 INFO /home/acash/.local/bin/bench --site ipshopy.localhost clear-cache
+2026-02-26 16:56:46,559 INFO /home/acash/.local/bin/bench clear-website-cache
+2026-02-26 17:01:45,560 INFO /home/acash/.local/bin/bench build --app crm
+2026-02-26 17:03:02,505 INFO /home/acash/.local/bin/bench clear-website-cache
+2026-02-26 17:03:05,422 INFO /home/acash/.local/bin/bench restart
+2026-02-26 17:03:10,707 INFO /home/acash/.local/bin/bench build
+2026-02-26 17:04:57,515 INFO /home/acash/.local/bin/bench watch
+2026-02-26 17:24:23,103 INFO /home/acash/.local/bin/bench restart
+2026-02-27 09:13:13,344 INFO /home/acash/.local/bin/bench start
+2026-02-27 09:13:13,657 INFO /home/acash/.local/bin/bench watch
+2026-02-27 09:13:13,664 INFO /home/acash/.local/bin/bench schedule
+2026-02-27 09:13:13,666 INFO /home/acash/.local/bin/bench worker
+2026-02-27 09:13:13,671 INFO /home/acash/.local/bin/bench serve --port 8000
+2026-02-27 10:20:38,474 INFO /home/acash/.local/bin/bench build --app lead_routing
+2026-02-27 10:32:35,040 INFO /home/acash/.local/bin/bench start
+2026-02-27 10:32:35,829 INFO /home/acash/.local/bin/bench serve --port 8000
+2026-02-27 10:32:35,835 INFO /home/acash/.local/bin/bench schedule
+2026-02-27 10:32:35,855 INFO /home/acash/.local/bin/bench worker
+2026-02-27 10:32:35,862 INFO /home/acash/.local/bin/bench watch
+2026-02-27 10:38:48,854 INFO /home/acash/.local/bin/bench build
+2026-02-27 10:39:50,708 INFO /home/acash/.local/bin/bench migrate
+2026-02-27 10:39:59,554 INFO /home/acash/.local/bin/bench restart
+2026-02-27 10:40:17,480 INFO /home/acash/.local/bin/bench clear-cache
+2026-02-27 10:54:25,172 INFO /home/acash/.local/bin/bench build
+2026-02-27 10:55:29,231 INFO /home/acash/.local/bin/bench migrate
+2026-02-27 10:55:34,514 INFO /home/acash/.local/bin/bench restart
+2026-02-27 11:20:27,028 INFO /home/acash/.local/bin/bench restart
+2026-02-27 11:20:28,930 INFO /home/acash/.local/bin/bench migrate
+2026-02-27 11:20:34,634 INFO /home/acash/.local/bin/bench build
+2026-02-27 11:21:40,866 INFO /home/acash/.local/bin/bench clear-cache
+2026-02-27 12:00:08,050 INFO /home/acash/.local/bin/bench clear-cache
+2026-02-27 12:00:09,209 INFO /home/acash/.local/bin/bench clear-website-cache
+2026-02-27 12:00:10,174 INFO /home/acash/.local/bin/bench restart
+2026-02-27 12:13:11,135 INFO /home/acash/.local/bin/bench build
+2026-02-27 12:14:49,605 INFO /home/acash/.local/bin/bench migrate
+2026-02-27 12:14:59,729 INFO /home/acash/.local/bin/bench restart
+2026-02-27 12:18:40,061 INFO /home/acash/.local/bin/bench restart
+2026-02-27 12:30:52,439 INFO /home/acash/.local/bin/bench clear-cache
+2026-02-27 12:30:53,650 INFO /home/acash/.local/bin/bench clear-website-cache
+2026-02-27 12:30:54,730 INFO /home/acash/.local/bin/bench restart
+2026-02-27 12:35:29,775 INFO /home/acash/.local/bin/bench build
+2026-02-27 12:37:15,915 INFO /home/acash/.local/bin/bench migrate
+2026-02-27 12:37:25,077 INFO /home/acash/.local/bin/bench restar
+2026-02-27 12:37:27,679 INFO /home/acash/.local/bin/bench restart

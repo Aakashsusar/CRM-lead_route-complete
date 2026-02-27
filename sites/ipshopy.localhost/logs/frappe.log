@@ -1,0 +1,1388 @@
+2026-02-20 17:38:59,004 ERROR frappe Failed to capture exception
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+Traceback (most recent call last):
+  File "/home/acash/frappe-bench/env/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 611, in get_json
+    rv = self.json_module.loads(data)
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/acash/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 122, in capture_exception
+    scope.set_context("JSON Body", frappe.request.json)
+  File "/home/acash/frappe-bench/env/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 560, in json
+    return self.get_json()
+  File "/home/acash/frappe-bench/env/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 620, in get_json
+    rv = self.on_json_loading_failed(e)
+  File "/home/acash/frappe-bench/env/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 645, in on_json_loading_failed
+    raise BadRequest(f"Failed to decode JSON object: {e}")
+werkzeug.exceptions.BadRequest: 400 Bad Request: Failed to decode JSON object: Expecting value: line 1 column 1 (char 0)
+2026-02-20 17:38:59,008 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-20 17:40:29,758 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-20 17:46:55,572 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 09:11:14,825 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 09:14:10,879 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 09:16:39,747 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 09:47:34,479 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"CRM Team","name":"new-crm-team-ozfctcjdfe","__islocal":1,"__unsaved":1,"owner":"Administrator","enabled":1,"team_name":"Team Onboarding","department_name":"Seller Onboarding","shift":"Morning","department":"S1-Seller Onboarding","shift_name":"Morning"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-02-23 09:55:24,106 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 10:32:57,465 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 10:35:53,649 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'user': 'susaraakash4@gmail.com', 'cmd': 'frappe.core.doctype.user.user.reset_password'}
+2026-02-23 10:40:21,845 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 10:44:40,788 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 10:46:40,575 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 11:08:12,417 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 11:11:41,264 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 11:12:13,545 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 11:20:45,625 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 11:21:45,623 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 12:33:26,953 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 12:34:54,860 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 12:41:05,753 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 12:41:58,359 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 13:05:50,563 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 13:06:52,523 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 13:41:28,174 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 13:42:39,229 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 16:27:13,373 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 16:28:13,717 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 16:32:27,216 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 16:34:34,131 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 16:40:12,614 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doctype': 'CRM Lead', 'filters': '[["CRM Lead","converted","=",0,false]]', 'fields': '[]', 'distinct': 'false', 'cmd': 'frappe.desk.reportview.get_count'}
+2026-02-23 16:41:17,828 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doctype': 'CRM Lead', 'filters': '[["CRM Lead","converted","=",0,false]]', 'fields': '[]', 'distinct': 'false', 'cmd': 'frappe.desk.reportview.get_count'}
+2026-02-23 16:41:58,713 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doctype': 'CRM Lead', 'filters': '[["CRM Lead","converted","=",0,false]]', 'fields': '[]', 'distinct': 'false', 'cmd': 'frappe.desk.reportview.get_count'}
+2026-02-23 16:45:09,654 ERROR frappe Error while inserting deferred Error Log record: Error Log 8r83m242n8: 'Title' ((1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Seller Onboarding'') OR `tabCRM Lead`.`name` IN (   SELECT parent FROM `tabLe...' at line 3")) will get truncated, as max characters allowed is 140
+Site: ipshopy.localhost
+Form Dict: {}
+2026-02-23 16:45:09,664 ERROR frappe Error while inserting deferred Error Log record: Error Log 8r8oljdu43: 'Title' ((1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Seller Onboarding'') OR `tabCRM Lead`.`name` IN (   SELECT parent FROM `tabLe...' at line 3")) will get truncated, as max characters allowed is 140
+Site: ipshopy.localhost
+Form Dict: {}
+2026-02-23 16:45:09,673 ERROR frappe Error while inserting deferred Error Log record: Error Log 8r85ol90ps: 'Title' ((1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Seller Onboarding'') OR `tabCRM Lead`.`name` IN (   SELECT parent FROM `tabLe...' at line 3")) will get truncated, as max characters allowed is 140
+Site: ipshopy.localhost
+Form Dict: {}
+2026-02-23 16:58:57,756 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:11:01,090 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:22:34,889 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:22:46,710 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:30:00,592 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:31:25,716 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:31:39,033 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:34:18,481 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:35:04,628 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:36:32,530 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:36:48,276 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:38:15,169 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:39:09,801 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:46:36,845 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:46:51,203 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:47:12,140 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:47:19,918 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:47:25,407 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:48:32,416 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:48:48,673 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:48:50,348 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:48:52,058 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:48:57,628 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:49:07,812 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:49:20,526 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:50:01,413 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:50:07,258 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:50:08,937 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:50:10,563 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:50:12,425 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:50:38,948 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:51:16,444 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:51:48,680 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:52:04,157 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:52:20,551 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:52:24,170 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:53:49,666 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:54:15,381 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:56:52,467 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:57:53,705 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:58:56,612 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 17:59:28,495 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:01:09,632 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:01:47,241 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'lead_name': 'CRM-LEAD-2026-00013', 'cmd': 'lead_routing.api.lead_transfer.mark_department_done'}
+2026-02-23 18:01:52,963 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'lead_name': 'CRM-LEAD-2026-00013', 'cmd': 'lead_routing.api.lead_transfer.mark_department_done'}
+2026-02-23 18:01:53,494 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'lead_name': 'CRM-LEAD-2026-00013', 'cmd': 'lead_routing.api.lead_transfer.mark_department_done'}
+2026-02-23 18:01:53,688 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'lead_name': 'CRM-LEAD-2026-00013', 'cmd': 'lead_routing.api.lead_transfer.mark_department_done'}
+2026-02-23 18:02:06,866 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'lead_name': 'CRM-LEAD-2026-00013', 'cmd': 'lead_routing.api.lead_transfer.mark_department_done'}
+2026-02-23 18:03:46,938 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:03:46,938 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:03:58,550 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:03:58,550 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:04:14,761 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:04:14,761 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:04:39,259 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:04:39,259 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:07:42,690 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:07:42,690 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:07:48,614 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:07:48,614 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:07:55,548 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:07:55,548 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:12:03,962 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:12:03,962 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:12:13,820 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:12:13,820 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:12:20,570 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-23 18:12:20,570 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 09:19:44,744 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 09:22:46,106 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 09:47:37,398 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 09:50:32,767 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:01:16,544 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:02:32,372 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:07:38,872 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:09:18,726 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:12:21,900 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:21:47,866 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:21:58,427 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:22:13,508 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:22:16,109 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:22:25,422 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:22:27,247 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:22:28,488 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:22:29,560 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:25:21,219 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:30:04,758 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:53:32,852 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:57:21,843 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:57:56,116 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:58:44,679 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 10:58:44,679 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:06:37,655 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:07:02,589 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:07:02,648 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:07:02,811 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:07:06,573 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:07:07,085 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:07:07,254 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:07:07,411 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:07:07,580 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:07:07,667 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:07:07,945 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:07:53,358 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:07:53,373 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:07:53,580 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:08:17,895 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:08:17,983 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:08:18,158 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:12:24,944 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:12:42,254 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:12:42,352 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:12:42,506 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:12:52,439 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:12:52,447 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:12:52,673 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:12:54,336 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:12:54,401 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:12:54,602 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:17:10,883 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:17:10,890 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:17:21,663 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:17:21,826 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:17:22,125 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:17:23,361 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:17:23,418 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:17:23,606 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:17:37,328 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:17:37,388 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:17:37,590 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:18:13,958 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:18:14,048 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:18:14,187 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:18:15,865 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:18:15,887 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:18:16,127 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:19:59,510 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:19:59,552 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:19:59,771 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:42:21,389 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:42:41,592 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:42:41,638 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:42:42,039 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:44:38,622 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:44:38,669 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:44:39,188 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:45:00,577 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:45:00,786 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:45:01,047 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:47:55,673 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:47:55,673 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:47:55,680 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:47:55,680 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:47:55,684 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:47:55,684 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:48:59,220 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:48:59,220 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:48:59,459 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:48:59,459 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:48:59,848 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:48:59,848 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:50:10,617 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:50:10,617 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:50:11,041 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:50:11,041 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:50:11,218 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:50:11,218 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:52:49,951 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:52:49,951 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:53:07,810 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:53:07,810 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:53:07,824 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:53:07,824 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:53:08,781 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:53:08,781 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:53:51,128 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:53:51,128 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:53:51,272 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:53:51,272 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:53:51,908 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:53:51,908 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:56:02,481 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:56:02,481 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:56:02,522 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:56:02,522 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:56:03,169 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:56:03,169 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:57:19,416 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:57:19,416 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:57:19,807 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:57:19,807 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:57:20,599 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:57:20,599 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:57:33,252 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:57:33,252 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:57:33,386 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:57:33,386 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:57:33,702 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:57:33,702 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:59:05,586 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:59:05,586 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:59:05,607 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:59:05,607 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:59:06,063 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:59:06,063 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.hierarchy.get_hierarchy_tree'}
+2026-02-24 11:59:19,743 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:59:47,087 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 11:59:55,661 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:00:06,210 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:01:27,235 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:05:29,505 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:07:40,790 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:07:47,910 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:16:26,096 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:18:43,690 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:18:44,817 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:18:51,355 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:18:54,337 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:18:57,948 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:23:27,277 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:23:54,325 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:25:04,901 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:27:33,558 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:28:11,752 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:28:21,902 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:28:51,573 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:28:53,878 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:29:02,280 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:29:03,571 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:29:14,359 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:35:21,966 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:35:46,474 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:35:53,002 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:36:06,158 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:36:18,543 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:36:20,220 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:36:35,497 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:36:40,239 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:36:51,117 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:36:53,723 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:41:27,367 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:42:44,662 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:50:17,334 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:50:35,644 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 12:50:53,291 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:10:39,528 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:10:39,528 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:10:55,366 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:10:55,366 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:10:58,601 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:10:58,601 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:12:18,010 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:12:18,010 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:12:41,660 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:12:41,660 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:12:57,648 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:12:57,648 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:13:01,276 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:13:01,276 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:13:09,312 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:13:09,312 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:13:57,343 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:13:57,343 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:14:18,085 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:14:18,085 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:14:44,589 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:14:44,589 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:14:58,064 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:14:58,064 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:15:06,496 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:15:06,496 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:15:26,493 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:15:26,493 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:15:35,051 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:15:35,051 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:15:47,742 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:15:47,742 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:16:04,556 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:16:04,556 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:16:08,945 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:16:08,945 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:16:34,984 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:16:34,984 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:16:42,358 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:16:42,358 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:16:51,398 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:16:51,398 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:16:57,066 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:16:57,066 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:17:22,257 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:17:22,257 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:17:27,252 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:17:27,252 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:17:43,715 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:17:43,715 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:17:59,605 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:17:59,605 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:18:17,258 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:18:17,258 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:18:22,990 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:18:22,990 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:18:34,629 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:18:34,629 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:18:39,688 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:18:39,688 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:18:52,260 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:18:52,260 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:18:58,628 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:18:58,628 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:19:10,629 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:19:10,629 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:20:13,057 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:20:13,057 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:22:22,223 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:22:22,223 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:23:11,930 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:23:11,930 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:23:35,406 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:23:35,406 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:38:27,566 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:39:29,185 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:40:18,643 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:40:25,915 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 13:55:35,030 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:04:39,000 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:06:22,673 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:06:24,773 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:06:26,344 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:06:29,839 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:07:03,033 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:07:09,776 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:08:01,080 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:10:37,796 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:12:54,579 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:13:41,766 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:14:50,075 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:17:03,126 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:17:38,886 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:18:09,948 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:18:36,705 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:18:55,191 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:19:10,811 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 15:19:37,764 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:05:44,969 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:39:51,156 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:39:57,657 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:41:31,173 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:42:26,606 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:42:40,481 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:43:02,850 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:44:00,663 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:45:17,453 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:47:28,820 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:51:16,397 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:52:32,866 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:53:02,320 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:53:44,968 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:54:25,199 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:55:04,191 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:55:25,662 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:55:47,276 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:57:17,890 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:58:00,194 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:58:55,529 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 16:58:58,325 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:00:24,067 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:02:21,865 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:05:49,749 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:06:49,164 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:07:08,001 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:07:39,683 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:08:20,996 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:08:56,460 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:09:11,953 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:10:05,686 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:11:56,840 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:12:37,752 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:13:38,388 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:14:44,333 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:15:04,966 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:15:29,506 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:27:59,781 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'cmd': 'crm.api.department.get_user_departments'}
+2026-02-24 17:37:44,429 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'dt': 'Lead Sync Source', 'dn': 'FB Sync - Standard form', 'method': 'sync_leads', 'args': None, 'cmd': 'run_doc_method'}
+2026-02-25 09:35:37,031 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'susaraakash4@gmail.com', 'status': 'New', 'salutation': 'Dr', 'first_name': 'dept', 'last_name': 'fury'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 09:36:54,189 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'Administrator', 'status': 'New', 'salutation': 'Dr', 'first_name': 'nick ', 'last_name': 'fury'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 09:46:24,062 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'susaraakash4@gmail.com', 'status': 'New', 'salutation': 'Dr', 'first_name': 'Nick ', 'last_name': 'fury'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 09:46:35,855 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'susaraakash4@gmail.com', 'status': 'New', 'salutation': 'Dr', 'first_name': 'Nick ', 'last_name': 'fury'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 09:51:40,113 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'susaraakash4@gmail.com', 'status': 'New', 'salutation': 'Dr', 'first_name': 'Nick ', 'last_name': 'Fury'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 09:52:19,016 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'Administrator', 'status': 'New', 'salutation': 'Master', 'first_name': 'li'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 09:54:55,565 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'susaraakash4@gmail.com', 'status': 'New', 'salutation': 'Dr', 'first_name': 'Nick', 'last_name': 'fury'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 09:54:58,672 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'susaraakash4@gmail.com', 'status': 'New', 'salutation': 'Dr', 'first_name': 'Nick', 'last_name': 'fury'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 09:55:00,132 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'susaraakash4@gmail.com', 'status': 'New', 'salutation': 'Dr', 'first_name': 'Nick', 'last_name': 'fury'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 09:55:01,249 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'susaraakash4@gmail.com', 'status': 'New', 'salutation': 'Dr', 'first_name': 'Nick', 'last_name': 'fury'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 09:55:02,565 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'susaraakash4@gmail.com', 'status': 'New', 'salutation': 'Dr', 'first_name': 'Nick', 'last_name': 'fury'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 09:55:06,566 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'susaraakash4@gmail.com', 'status': 'New', 'salutation': 'Dr', 'first_name': 'Nick', 'last_name': 'fury'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 09:55:08,550 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'susaraakash4@gmail.com', 'status': 'New', 'salutation': 'Dr', 'first_name': 'Nick', 'last_name': 'fury'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 09:55:12,576 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'susaraakash4@gmail.com', 'status': 'New', 'salutation': 'Dr', 'first_name': 'Nick', 'last_name': 'fury'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 10:01:03,225 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'susaraakash4@gmail.com', 'status': 'New', 'salutation': 'Dr', 'first_name': 'nick', 'last_name': 'fury'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 10:01:07,901 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'susaraakash4@gmail.com', 'status': 'New', 'salutation': 'Dr', 'first_name': 'nick', 'last_name': 'fury'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 10:02:10,549 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'Administrator', 'status': 'New', 'salutation': 'Dr', 'first_name': 'tester'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 10:08:56,583 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'Administrator', 'status': 'New', 'salutation': 'Dr', 'first_name': 'NIckolas', 'last_name': 'Tesla'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 10:09:30,639 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'susaraakash4@gmail.com', 'status': 'New', 'first_name': 'NIck', 'last_name': 'fury', 'salutation': 'Dr'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 10:11:36,364 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {}
+2026-02-25 10:11:53,730 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {}
+2026-02-25 10:12:06,432 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {}
+2026-02-25 10:12:23,876 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {}
+2026-02-25 10:24:09,182 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'doc': {'doctype': 'CRM Lead', 'no_of_employees': '1-10', 'lead_owner': 'susaraakash4@gmail.com', 'status': 'New', 'salutation': 'Madam', 'first_name': 'grey'}, 'cmd': 'frappe.client.insert'}
+2026-02-25 11:48:13,392 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'dt': 'Lead Sync Source', 'dn': 'FB Sync - Seller Registration 26012026-copy-copy', 'method': 'sync_leads', 'args': None, 'cmd': 'run_doc_method'}
+2026-02-25 11:49:10,105 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'dt': 'Lead Sync Source', 'dn': 'FB Sync - Seller Registration 26012026-copy-copy', 'method': 'sync_leads', 'args': None, 'cmd': 'run_doc_method'}
+2026-02-25 11:49:19,204 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'dt': 'Lead Sync Source', 'dn': 'FB Sync - Seller Registration 26012026-copy-copy', 'method': 'sync_leads', 'args': {'dt': 'Lead Sync Source', 'dn': 'FB Sync - Seller Registration 26012026-copy-copy', 'method': 'sync_leads', 'args': None}, 'cmd': 'run_doc_method'}
+2026-02-25 11:51:51,413 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'dt': 'Lead Sync Source', 'dn': 'FB Sync - Seller Registration 26012026-copy-copy', 'method': 'sync_leads', 'args': None, 'cmd': 'run_doc_method'}
+2026-02-27 12:15:25,236 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'lead_name': 'CRM-LEAD-2026-05076', 'cmd': 'lead_routing.api.lead_transfer.mark_department_done'}
+2026-02-27 12:15:41,697 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'lead_name': 'CRM-LEAD-2026-04136', 'cmd': 'lead_routing.api.lead_transfer.mark_department_done'}
+2026-02-27 12:15:51,154 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'lead_name': 'CRM-LEAD-2026-04136', 'cmd': 'lead_routing.api.lead_transfer.mark_department_done'}
+2026-02-27 12:15:55,457 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'lead_name': 'CRM-LEAD-2026-04136', 'cmd': 'lead_routing.api.lead_transfer.mark_department_done'}
+2026-02-27 12:15:57,276 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'lead_name': 'CRM-LEAD-2026-04136', 'cmd': 'lead_routing.api.lead_transfer.mark_department_done'}
+2026-02-27 12:16:33,195 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'lead_name': 'CRM-LEAD-2026-05076', 'cmd': 'lead_routing.api.lead_transfer.mark_department_done'}
+2026-02-27 12:17:04,062 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'lead_name': 'CRM-LEAD-2026-05076', 'cmd': 'lead_routing.api.lead_transfer.send_back_to_department'}

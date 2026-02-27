@@ -1,0 +1,7 @@
+{
+ "db_name": "_76586ea39756b762",
+ "db_password": "cVEYwLQwhjFFmcwR",
+ "db_type": "mariadb",
+ "developer_mode": 1,
+ "installed_apps": "[\"frappe\",\"crm\",\"lead_routing\"]"
+}

@@ -1,0 +1,687 @@
+2026-02-20 17:37:04,166 WARNING database DDL Query made to DB:
+create table `tabCRM Team Member` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`team` varchar(140),
+`user` varchar(140),
+`user_name` varchar(140),
+`role` varchar(140) default 'Member',
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-20 17:37:04,221 WARNING database DDL Query made to DB:
+create table `tabCRM Product` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`naming_series` varchar(140),
+`product_code` varchar(140) unique,
+`product_name` varchar(140),
+`disabled` int(1) not null default 0,
+`standard_rate` decimal(21,9) not null default 0,
+`image` text,
+`description` longtext,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-20 17:37:04,269 WARNING database DDL Query made to DB:
+create table `tabCRM Holiday` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`date` date,
+`weekly_off` int(1) not null default 0,
+`description` longtext,
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-20 17:37:04,322 WARNING database DDL Query made to DB:
+create table `tabCRM Organization` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`organization_name` varchar(140) unique,
+`no_of_employees` varchar(140),
+`currency` varchar(140),
+`exchange_rate` decimal(21,9) not null default 0,
+`annual_revenue` decimal(21,9) not null default 0,
+`organization_logo` text,
+`website` varchar(140),
+`territory` varchar(140),
+`industry` varchar(140),
+`address` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-20 17:37:04,380 WARNING database DDL Query made to DB:
+create table `tabCRM Holiday List` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`holiday_list_name` varchar(140) unique,
+`from_date` date,
+`to_date` date,
+`total_holidays` int(11) not null default 0,
+`weekly_off` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-20 17:37:04,439 WARNING database DDL Query made to DB:
+create table `tabCRM Notification` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`notification_text` text,
+`from_user` varchar(140),
+`type` varchar(140),
+`to_user` varchar(140),
+`read` int(1) not null default 0,
+`reference_doctype` varchar(140),
+`reference_name` varchar(140),
+`notification_type_doctype` varchar(140),
+`notification_type_doc` varchar(140),
+`comment` varchar(140),
+`message` longtext,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-20 17:37:04,506 WARNING database DDL Query made to DB:
+create table `tabCRM Team` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`team_name` varchar(140),
+`enabled` int(1) not null default 1,
+`department` varchar(140),
+`department_name` varchar(140),
+`shift` varchar(140),
+`shift_name` varchar(140),
+`team_leader` varchar(140),
+`email` varchar(140),
+`description` text,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-20 17:37:04,577 WARNING database DDL Query made to DB:
+create table `tabCRM Global Settings` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`dt` varchar(140) default 'DocType',
+`type` varchar(140),
+`json` json,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-20 17:37:04,632 WARNING database DDL Query made to DB:
+create table `tabCRM Industry` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`industry` varchar(140) unique,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-20 17:37:04,689 WARNING database DDL Query made to DB:
+create table `tabCRM Lead Source` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`source_name` varchar(140) unique,
+`details` longtext,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-20 17:37:04,760 WARNING database DDL Query made to DB:
+create table `tabCRM WhatsApp Message` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`message_id` varchar(140) unique,
+`phone_number` varchar(140),
+`country_code` varchar(140) default '+91',
+`status` varchar(140) default 'Pending',
+`direction` varchar(140) default 'Outgoing',
+`sent_by` varchar(140),
+`template_name` varchar(140),
+`template_language` varchar(140) default 'en',
+`message_content` longtext,
+`media_url` varchar(140),
+`reference_doctype` varchar(140),
+`reference_docname` varchar(140),
+`callback_data` longtext,
+`campaign_id` varchar(140),
+`sent_at` datetime(6),
+`delivered_at` datetime(6),
+`read_at` datetime(6),
+`failed_at` datetime(6),
+`error_message` text,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-20 17:37:04,864 WARNING database DDL Query made to DB:
+create table `tabFacebook Lead Form` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`page` varchar(140),
+`id` varchar(140) unique,
+`form_name` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-20 17:37:04,916 WARNING database DDL Query made to DB:
+create table `tabFailed Lead Sync Log` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`type` varchar(140) default 'Failure',
+`source` varchar(140),
+`lead_data` longtext,
+`traceback` longtext,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-20 17:37:04,969 WARNING database DDL Query made to DB:
+create table `tabFacebook Page` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`page_name` varchar(140),
+`account_id` varchar(140),
+`category` varchar(140),
+`id` varchar(140) unique,
+`access_token` text,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-20 17:37:05,028 WARNING database DDL Query made to DB:
+create table `tabLead Sync Source` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`type` varchar(140) default 'Facebook',
+`access_token` text,
+`last_synced_at` datetime(6),
+`enabled` int(1) not null default 1,
+`background_sync_frequency` varchar(140) default 'Hourly',
+`facebook_page` varchar(140),
+`facebook_lead_form` varchar(140) unique,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-20 17:37:05,076 WARNING database DDL Query made to DB:
+create table `tabFacebook Lead Form Question` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`label` varchar(140),
+`id` varchar(140),
+`key` varchar(140),
+`type` varchar(140),
+`mapped_to_crm_field` varchar(140),
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-20 17:37:05,866 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Template` ADD COLUMN `enabled` int(1) not null default 0, ADD COLUMN `reference_doctype` varchar(140)
+2026-02-20 17:37:06,228 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAssignment Rule` ADD COLUMN `assign_condition_json` longtext, ADD COLUMN `unassign_condition_json` longtext
+2026-02-20 17:37:46,157 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-23 09:54:18,335 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-23 09:59:33,934 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-23 11:11:56,194 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-23 11:17:12,603 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-23 11:17:13,569 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Telephony Agent` ADD COLUMN `interakt` int(1) not null default 0, ADD COLUMN `interakt_whatsapp_number` varchar(140)
+2026-02-23 11:17:13,599 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Telephony Agent` ADD INDEX `creation`(`creation`)
+2026-02-23 11:17:14,024 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` MODIFY `net_total` decimal(21,9) not null default 0, MODIFY `last_response_time` decimal(21,9), MODIFY `first_response_time` decimal(21,9), MODIFY `total` decimal(21,9) not null default 0, MODIFY `annual_revenue` decimal(21,9) not null default 0
+2026-02-23 11:17:14,345 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWhatsApp Templates` ADD COLUMN `category` varchar(140), ADD COLUMN `language_code` varchar(140), ADD COLUMN `interakt_template_id` varchar(140), ADD COLUMN `header_type` varchar(140), ADD COLUMN `header_format` varchar(140), ADD COLUMN `header_text` varchar(140), ADD COLUMN `body_text` longtext, ADD COLUMN `buttons` longtext, ADD COLUMN `variable_count` int(11) not null default 0, ADD COLUMN `last_synced` datetime(6)
+2026-02-23 11:17:14,614 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM WhatsApp Message` ADD INDEX `creation`(`creation`)
+2026-02-23 11:17:15,214 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` ADD COLUMN `department` varchar(140), ADD COLUMN `sales_team` varchar(140), ADD COLUMN `auto_distributed` int(1) not null default 0, ADD COLUMN `distribution_timestamp` datetime(6)
+2026-02-23 11:17:15,231 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` MODIFY `total` decimal(21,9) not null default 0, MODIFY `net_total` decimal(21,9) not null default 0, MODIFY `first_response_time` decimal(21,9), MODIFY `annual_revenue` decimal(21,9) not null default 0, MODIFY `last_response_time` decimal(21,9)
+2026-02-23 16:16:27,239 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-23 16:16:31,619 WARNING database DDL Query made to DB:
+create table `tabDepartment Transition Rule` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`from_stage` varchar(140),
+`to_stage` varchar(140),
+`transition_type` varchar(140),
+`enabled` int(1) not null default 1,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-23 16:16:31,848 WARNING database DDL Query made to DB:
+create table `tabDepartment Pipeline Stage` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`stage_name` varchar(140) unique,
+`stage_order` int(11) not null default 0 unique,
+`is_terminal` int(1) not null default 0,
+`enabled` int(1) not null default 1,
+`department_role` varchar(140),
+`manager_role` varchar(140),
+`internal_statuses` text,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-23 16:16:32,028 WARNING database DDL Query made to DB:
+create table `tabDepartment Shift` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`shift_name` varchar(140) unique,
+`enabled` int(1) not null default 1,
+`start_time` time(6),
+`end_time` time(6),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-23 16:16:32,166 WARNING database DDL Query made to DB:
+create table `tabLead Department Log` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`department` varchar(140),
+`shift` varchar(140),
+`assigned_user` varchar(140),
+`entered_at` datetime(6),
+`exited_at` datetime(6),
+`action` varchar(140),
+`notes` text,
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-23 16:17:00,485 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` ADD COLUMN `current_department` varchar(140), ADD COLUMN `current_shift` varchar(140), ADD COLUMN `department_status` varchar(140)
+2026-02-23 16:17:00,529 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` MODIFY `annual_revenue` decimal(21,9) not null default 0, MODIFY `net_total` decimal(21,9) not null default 0, MODIFY `total` decimal(21,9) not null default 0, MODIFY `first_response_time` decimal(21,9), MODIFY `last_response_time` decimal(21,9)
+2026-02-23 16:17:00,622 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` ADD INDEX `current_department_index`(`current_department`), ADD INDEX `current_shift_index`(`current_shift`)
+2026-02-23 16:26:33,026 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-23 16:31:56,851 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-23 16:48:36,907 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-23 16:55:07,689 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` MODIFY `first_response_time` decimal(21,9), MODIFY `annual_revenue` decimal(21,9) not null default 0, MODIFY `last_response_time` decimal(21,9), MODIFY `total` decimal(21,9) not null default 0, MODIFY `net_total` decimal(21,9) not null default 0
+2026-02-23 16:55:08,350 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` MODIFY `net_total` decimal(21,9) not null default 0, MODIFY `total` decimal(21,9) not null default 0, MODIFY `first_response_time` decimal(21,9), MODIFY `annual_revenue` decimal(21,9) not null default 0, MODIFY `last_response_time` decimal(21,9)
+2026-02-23 16:55:08,724 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` MODIFY `first_response_time` decimal(21,9), MODIFY `annual_revenue` decimal(21,9) not null default 0, MODIFY `net_total` decimal(21,9) not null default 0, MODIFY `total` decimal(21,9) not null default 0, MODIFY `last_response_time` decimal(21,9)
+2026-02-23 16:55:09,108 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` MODIFY `net_total` decimal(21,9) not null default 0, MODIFY `first_response_time` decimal(21,9), MODIFY `annual_revenue` decimal(21,9) not null default 0, MODIFY `last_response_time` decimal(21,9), MODIFY `total` decimal(21,9) not null default 0
+2026-02-23 16:55:09,545 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` MODIFY `annual_revenue` decimal(21,9) not null default 0, MODIFY `first_response_time` decimal(21,9), MODIFY `total` decimal(21,9) not null default 0, MODIFY `last_response_time` decimal(21,9), MODIFY `net_total` decimal(21,9) not null default 0
+2026-02-23 16:55:10,035 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` MODIFY `net_total` decimal(21,9) not null default 0, MODIFY `annual_revenue` decimal(21,9) not null default 0, MODIFY `last_response_time` decimal(21,9), MODIFY `total` decimal(21,9) not null default 0, MODIFY `first_response_time` decimal(21,9)
+2026-02-23 16:55:10,503 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` MODIFY `first_response_time` decimal(21,9), MODIFY `total` decimal(21,9) not null default 0, MODIFY `last_response_time` decimal(21,9), MODIFY `net_total` decimal(21,9) not null default 0, MODIFY `annual_revenue` decimal(21,9) not null default 0
+2026-02-23 16:55:10,987 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` MODIFY `last_response_time` decimal(21,9), MODIFY `net_total` decimal(21,9) not null default 0, MODIFY `first_response_time` decimal(21,9), MODIFY `total` decimal(21,9) not null default 0, MODIFY `annual_revenue` decimal(21,9) not null default 0
+2026-02-23 16:55:11,566 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` MODIFY `total` decimal(21,9) not null default 0, MODIFY `net_total` decimal(21,9) not null default 0, MODIFY `last_response_time` decimal(21,9), MODIFY `first_response_time` decimal(21,9), MODIFY `annual_revenue` decimal(21,9) not null default 0
+2026-02-23 16:55:12,090 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` MODIFY `net_total` decimal(21,9) not null default 0, MODIFY `last_response_time` decimal(21,9), MODIFY `total` decimal(21,9) not null default 0, MODIFY `first_response_time` decimal(21,9), MODIFY `annual_revenue` decimal(21,9) not null default 0
+2026-02-23 16:56:35,912 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-23 16:56:37,237 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` MODIFY `annual_revenue` decimal(21,9) not null default 0, MODIFY `first_response_time` decimal(21,9), MODIFY `last_response_time` decimal(21,9), MODIFY `total` decimal(21,9) not null default 0, MODIFY `net_total` decimal(21,9) not null default 0
+2026-02-23 17:08:53,789 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-23 17:46:34,696 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-23 17:51:37,246 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-23 17:56:39,921 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 09:38:01,834 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 09:38:02,525 WARNING database DDL Query made to DB:
+create table `tabDepartment Team Member` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`user` varchar(140),
+`full_name` varchar(140),
+`is_active` int(1) not null default 1,
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-24 09:45:11,696 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 10:02:20,154 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 10:19:06,825 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 10:21:14,297 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 10:51:01,549 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 10:51:02,103 WARNING database DDL Query made to DB:
+create table `tabLead History` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-24 10:51:26,111 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 10:53:16,038 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 11:06:24,062 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 11:12:10,423 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 11:16:55,915 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 11:41:53,874 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 11:49:52,249 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 11:56:06,835 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 12:06:42,748 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 12:15:43,840 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 13:13:41,243 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 13:37:58,397 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 15:06:09,334 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 15:10:23,444 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 15:16:43,692 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 16:25:44,595 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` ADD COLUMN `custom_field_text` text
+2026-02-24 16:25:44,625 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCRM Lead` MODIFY `first_response_time` decimal(21,9), MODIFY `annual_revenue` decimal(21,9) not null default 0, MODIFY `last_response_time` decimal(21,9), MODIFY `total` decimal(21,9) not null default 0, MODIFY `net_total` decimal(21,9) not null default 0
+2026-02-24 16:35:14,631 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLead Sync Source` ADD INDEX `creation`(`creation`)
+2026-02-24 16:38:22,314 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 17:08:01,528 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-24 17:30:41,325 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-25 09:44:28,357 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-25 09:50:09,265 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-25 09:53:53,769 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-25 10:00:24,420 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-25 10:08:20,877 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-25 10:22:39,227 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-26 12:35:15,872 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-26 13:41:38,767 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-26 14:06:54,584 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-26 14:59:40,560 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-26 14:59:41,371 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDepartment Team Member` ADD COLUMN `shift` varchar(140)
+2026-02-26 14:59:41,391 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDepartment Team Member` ADD INDEX `creation`(`creation`)
+2026-02-26 15:03:46,442 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-26 15:29:30,126 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-26 15:38:30,260 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-26 15:51:32,588 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-26 16:55:26,636 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-27 10:39:51,624 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-27 10:55:29,988 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-27 11:20:29,518 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-27 12:14:50,754 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-27 12:37:16,974 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)

@@ -1,0 +1,26 @@
+2026-02-20 16:52:27,452 INFO ipython === bench console session ===
+2026-02-20 16:52:27,453 INFO ipython doc = frappe.get_single("Installed Applications")
+
+doc.installed_applications = [
+    d for d in doc.installed_applications
+    if d.app_name != "ipshopy"
+]
+
+doc.save(ignore_permissions=True)
+frappe.db.commit()
+
+print("Removed ipshopy successfully")
+2026-02-20 16:52:27,453 INFO ipython frappe.db.sql("""
+DELETE FROM `tabInstalled Applications`
+WHERE app_name = 'ipshopy'
+""")
+
+frappe.db.commit()
+
+print("ipshopy removed from DB")
+2026-02-20 16:52:27,453 INFO ipython frappe.get_site_config()
+2026-02-20 16:52:27,453 INFO ipython frappe.db.set_default("installed_apps", ["frappe", "crm"])
+frappe.db.commit()
+
+print("Installed apps reset")
+2026-02-20 16:52:27,453 INFO ipython === session end ===

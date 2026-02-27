@@ -1,0 +1,42 @@
+2026-02-20 17:31:00,586 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'EIO': '4', 'transport': 'polling', 't': 'u9ktz75v'}
+2026-02-20 17:31:06,422 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'EIO': '4', 'transport': 'polling', 't': 'u9pgsj64'}
+2026-02-20 17:31:12,438 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'EIO': '4', 'transport': 'polling', 't': 'u9u3h8jt'}
+2026-02-20 17:31:18,414 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'EIO': '4', 'transport': 'polling', 't': 'u9yptrtv'}
+2026-02-20 17:31:24,442 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'EIO': '4', 'transport': 'polling', 't': 'ua3csoeh'}
+2026-02-20 17:31:30,427 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'EIO': '4', 'transport': 'polling', 't': 'ua7zbyx7'}
+2026-02-20 17:31:36,430 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'EIO': '4', 'transport': 'polling', 't': 'uaclsta5'}
+2026-02-20 17:31:42,430 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'EIO': '4', 'transport': 'polling', 't': 'uah8nek7'}
+2026-02-20 17:31:48,438 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'EIO': '4', 'transport': 'polling', 't': 'ualvhj8b'}
+2026-02-20 17:31:54,424 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'EIO': '4', 'transport': 'polling', 't': 'uaqi1fua'}
+2026-02-20 17:32:00,492 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'EIO': '4', 'transport': 'polling', 't': 'uav4raws'}
+2026-02-20 17:32:06,470 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'EIO': '4', 'transport': 'polling', 't': 'uazrblh8'}
+2026-02-20 17:32:12,736 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'EIO': '4', 'transport': 'polling', 't': 'ub4dtd1g'}
+2026-02-20 17:32:18,535 ERROR frappe New Exception collected in error log
+Site: ipshopy.localhost
+Form Dict: {'EIO': '4', 'transport': 'polling', 't': 'ub90p001'}
